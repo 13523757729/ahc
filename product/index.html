@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- 引入boot文件，引入顺序有要求-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/same.css"/>
+    <title></title>
+</head>
+<body>
+<header></header>
+<table></table>
+<div class="container-fluid my_top">
+    <!-- 轮播图 -->
+    <div class="carousel mb-3" data-ride="carousel" id="content1">
+        <div class="carousel-inner">
+            <img src="http://127.0.0.1:3000/images/index/banner1.jpg" class="carousel-item active"/>
+            <img src="http://127.0.0.1:3000/images/index/banner2.jpg" class="carousel-item"/>
+        </div>
+        <!-- 左右箭头 -->
+        <a href="#content1" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#content1" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        <!-- 轮播提示器 -->
+        <ul class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#content1"></li>
+            <li data-slide-to="1" data-target="#content1"></li>
+        </ul>
+    </div>
+    <!-- 分类 -->
+    <div class="row" id="main">
+        <div class="col-lg-8 col-sm-12 mb-sm-3">
+           <p class="font-weight-bold h5">品牌故事</p>
+            <p class="font-weight-bold h5">明星产品
+            </p>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <p class="font-weight-bold h5">当红热卖</p>
+            <p class="font-weight-bold h5">官方商城</p>  
+        </div>
+    </div>
+</div>
+<footer class="mt-5 mb-5"></footer>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

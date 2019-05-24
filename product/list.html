@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- 引入boot文件，引入顺序有要求-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title></title>
+    <link rel="stylesheet" href="css/same.css"/>
+    <link rel="stylesheet" href="css/list.css"/>
+</head>
+<body>
+<header></header>
+<table></table>
+<div class="container-fluid p-0 mb-3 my_top  position-relative" id="details">
+    <a href="javascript:" class="my_btn position-absolute">立即购买</a>
+    <!-- 产品详情页 -->
+            <h1 class="font-weight-bold text-secondary position-absolute">玻尿酸补水保湿爽肤水</h1>
+            <div id="details_top">
+
+            </div>
+        </div>
+<h4 class="text-center mb-3 detail p-2">产品详情</h4>
+<div class="container">
+    <!-- 产品详情 -->
+    <div class="mb-3" id="details_bottom"></div>
+    <div class="d-flex justify-content-around detail mb-3">
+        <ul class="list-unstyled">
+            <li>销售公司/制造公司/制造国家</li>
+            <li>AHC消费者咨询室</li>
+        </ul>
+        <ul class="list-unstyled">
+            <li>CARVERKOREA / WHITECOSPHARM / KOREA</li>
+            <li>http://www.ahc.com</li>
+        </ul>
+    </div>
+    <!--使用注意事项-->
+        <div class="d-flex justify-content-end">
+            <button data-toggle="modal" data-target="#demo" class="my_btn btns">使用注意事项</button>
+            <div id="demo" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="text-white font-weight-bold">使用注意事项</h5>
+                            <button class="close" data-dismiss="modal">
+                                <img src="http://127.0.0.1:3000/images/tubiao/popup_close.png"/>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="attention">
+                        </div>
+                        <div class="modal-footer">
+                            <button data-dismiss="modal" class="btn">关闭</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 查看所有成分 -->
+            <button data-toggle="modal" data-target="#demo1" class="my_btn">查看所有成分</button>
+            <div id="demo1" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="text-white font-weight-bold">查看所有成分</h5>
+                            <button class="close" data-dismiss="modal">
+                                <img src="http://127.0.0.1:3000/images/tubiao/popup_close.png"/>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="ingredient">
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <button data-dismiss="modal" class="btn">关闭</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--产品推荐-->
+    <div class="d-flex mt-5 mb-5" id="data">
+        <button class="my_lg_btn" data-toggle="tab" data-target="#d1" id="btn1">建议搭配产品</button>
+        <button class="my_lg_btn" data-toggle="tab" data-target="#d2" id="btn2">AHC产品推荐</button>
+    </div>
+    <div id="parent"><!--class="position-relative"-->
+        <div id="d1"><!-- class="position-absolute z-index"-->
+            <div class="row m-0">
+                <div class="col-lg-3 col-sm-12 text-center p-0 pr-lg-4">
+                    <div class="img_content">
+                        <img src="http://127.0.0.1:3000/images/product/shuangfushui111.jpg" class="w-100"/>
+                        <div class="mask text-center">
+                            <a href="#" class="btn h5 ">查看详情</a>
+                        </div>
+                    </div>
+                    <p class=" mt-2 mb-0 text-secondary">璀璨珍珠柔肤水</p>
+                </div>
+                <div class="col-lg-3 col-sm-12 text-center p-0 pr-lg-4">
+                    <div class="img_content">
+                        <img src="http://127.0.0.1:3000/images/product/shuangfushui.jpg" class="w-100"/>
+                        <div class="mask text-center">
+                            <a href="#" class="btn h5 ">查看详情</a>
+                        </div>
+                    </div>
+                    <p class=" mt-2 mb-0 text-secondary">黄金爽肤水</p>
+                </div>
+                <div class="col-lg-3 col-sm-12 text-center p-0 pr-lg-4">
+                    <div class="img_content">
+                        <img src="http://127.0.0.1:3000/images/product/xiuhushui.jpg" class="w-100"/>
+                        <div class="mask text-center">
+                            <a href="product_list/list.html" class="btn h5 ">查看详情</a>
+                        </div>
+                    </div>
+                    <p class="mt-2 mb-0 text-secondary">胶原蛋白焕颜修护水</p>
+                </div>
+                <div class="col-lg-3 col-sm-12 text-center p-0 pr-lg-4">
+                    <div class="img_content">
+                        <img src="http://127.0.0.1:3000/images/product/jinghua.jpg" class="w-100"/>
+                        <div class="mask text-center">
+                            <a href="product_list/list.html" class="btn h5 ">查看详情</a>
+                        </div>
+                    </div>
+                    <p class="mt-2 mb-0 text-secondary">玻尿酸润颜安瓶精华</p>
+                </div>
+            </div>
+        </div>
+        <div id="d2"><!-- class="position-absolute"-->
+            <div class="row m-0">
+                <div class="col-lg-3 col-sm-12 text-center p-0 pr-lg-4">
+                    <div class="img_content">
+                        <img src="http://127.0.0.1:3000/images/product/mianmo.jpg" class="w-100"/>
+                        <div class="mask text-center">
+                            <a href="#" class="btn h5 ">查看详情</a>
+                        </div>
+                    </div>
+                    <p class=" mt-2 mb-0 text-secondary">璀璨珍珠柔肤水</p>
+                </div>
+                <div class="col-lg-3 col-sm-12 text-center p-0 pr-lg-4">
+                    <div class="img_content">
+                        <img src="http://127.0.0.1:3000/images/product/ruye.jpg" class="w-100"/>
+                        <div class="mask text-center">
+                            <a href="#" class="btn h5 ">查看详情</a>
+                        </div>
+                    </div>
+                    <p class=" mt-2 mb-0 text-secondary">黄金爽肤水</p>
+                </div>
+                <div class="col-lg-3 col-sm-12 text-center p-0 pr-lg-4">
+                    <div class="img_content">
+                        <img src="http://127.0.0.1:3000/images/product/miammo12.jpg" class="w-100"/>
+                        <div class="mask text-center">
+                            <a href="product_list/list.html" class="btn h5 ">查看详情</a>
+                        </div>
+                    </div>
+                    <p class="mt-2 mb-0 text-secondary">胶原蛋白焕颜修护水</p>
+                </div>
+                <div class="col-lg-3 col-sm-12 text-center p-0 pr-lg-4">
+                    <div class="img_content">
+                        <img src="http://127.0.0.1:3000/images/product/miammo16.jpg" class="w-100"/>
+                        <div class="mask text-center">
+                            <a href="product_list/list.html" class="btn h5 ">查看详情</a>
+                        </div>
+                    </div>
+                    <p class="mt-2 mb-0 text-secondary">胶原蛋白焕颜修护水</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<footer class="mt-5"></footer>
+<script>
+    var body=document.body;
+    var btn1=document.getElementById("btn1");
+    var btn2=document.getElementById("btn2");
+    var d1=document.getElementById("d1");
+    var d2=document.getElementById("d2");
+    d2.style.display="none";
+    d1.style.zIndex="0";
+    body.onload=function(){
+        btn1.className="my_lg_btn_focus";
+    }
+    btn1.onclick=function(){
+        d1.style.display="block";
+        d2.style.display="none";
+        btn2.className="my_lg_btn"
+        btn1.className="my_lg_btn_focus";
+    }
+    btn2.onclick=function(){
+        d1.style.display="none";
+        d2.style.display="block";
+        btn1.className="my_lg_btn"
+        btn2.className="my_lg_btn_focus";
+    }
+</script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/details.js"></script>
+</body>
+</html>

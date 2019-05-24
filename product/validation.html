@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- 引入boot文件，引入顺序有要求-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title></title>
+    <link rel="stylesheet" href="css/same.css"/>
+    <link rel="stylesheet" href="css/validation.css"/>
+    <style>
+
+    </style>
+</head>
+<body>
+<header></header>
+<table></table>
+<div class="container-fluid p-0 my_top">
+    <img src="http://127.0.0.1:3000/images/validation/genuine_visual.jpg" class="w-100 mb-3"/>
+    <p class="h1 font-weight-bold text-center">正品验证</p>
+    <div class="text-center">
+        <img src="http://127.0.0.1:3000/images/validation/genuine_content.jpg" class="w-75 mb-3"/>
+        <img src="http://127.0.0.1:3000/images/validation/silde_title.png" class="w-100"/>
+    </div>
+</div>
+<div class="container text-center mt-5">
+    <div class="d-inline-flex mt-lg-5 mb-lg-5 mt-sm-5 mb-sm-2">
+        <a href="#d1" class="my_btn_lg" id="btn1" data-toggle="tab">AHC APP下载</a>
+        <a href="#d2" class="my_btn_lg" id="btn2" data-toggle="tab">二维码</a>
+    </div>
+    <!-- 轮播 -->
+    <div id="parent">
+        <div id="d1">
+            <div class="carousel mb-3" data-ride="carousel" id="content1">
+                <div class="carousel-inner text-center">
+                    <img src="http://127.0.0.1:3000/images/validation/app1.jpg" class="carousel-item active"/>
+                    <img src="http://127.0.0.1:3000/images/validation/app2.jpg" class="carousel-item"/>
+                    <img src="http://127.0.0.1:3000/images/validation/app3.jpg" class="carousel-item"/>
+                    <img src="http://127.0.0.1:3000/images/validation/app4.jpg" class="carousel-item"/>
+                    <img src="http://127.0.0.1:3000/images/validation/app5.jpg" class="carousel-item"/>
+                </div>
+                <!-- 左右箭头 -->
+                <a href="#content1" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#content1" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                <!-- 轮播提示器 -->
+                <ul class="carousel-indicators">
+                    <li class="active" data-slide-to="0" data-target="#content1"></li>
+                    <li data-slide-to="1" data-target="#content1"></li>
+                    <li data-slide-to="2" data-target="#content1"></li>
+                    <li data-slide-to="3" data-target="#content1"></li>
+                    <li data-slide-to="4" data-target="#content1"></li>
+                </ul>
+            </div>
+        </div>
+        <div id="d2">
+            <div class="carousel mb-3" data-ride="carousel" id="content2">
+                <div class="carousel-inner text-center">
+                    <img src="http://127.0.0.1:3000/images/validation/qr1.jpg" class="carousel-item active"/>
+                    <img src="http://127.0.0.1:3000/images/validation/qr2.jpg" class="carousel-item"/>
+                    <img src="http://127.0.0.1:3000/images/validation/qr3.jpg" class="carousel-item"/>
+                    <img src="http://127.0.0.1:3000/images/validation/qr4.jpg" class="carousel-item"/>
+                    <img src="http://127.0.0.1:3000/images/validation/qr5.jpg" class="carousel-item"/>
+                </div>
+                <!-- 左右箭头 -->
+                <a href="#content2" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#content2" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                <!-- 轮播提示器 -->
+                <ul class="carousel-indicators">
+                    <li class="active" data-slide-to="0" data-target="#content2"></li>
+                    <li data-slide-to="1" data-target="#content2"></li>
+                    <li data-slide-to="2" data-target="#content2"></li>
+                    <li data-slide-to="3" data-target="#content2"></li>
+                    <li data-slide-to="4" data-target="#content2"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 底图 -->
+    <div class="text-center">
+        <img src="http://127.0.0.1:3000/images/validation/genuine_content2%20(1).jpg" class="w-100 z-index"/>
+    </div>
+</div>
+<footer></footer>
+<script>
+    var body=document.body;
+    var btn1=document.getElementById("btn1");
+    var btn2=document.getElementById("btn2");
+    var d1=document.getElementById("d1");
+    var d2=document.getElementById("d2");
+    d2.style.display="none";
+    d1.style.zIndex="0";
+    body.onload=function(){
+        btn1.className="btn_lg_focus";
+    }
+    btn1.onclick=function(){
+        d1.style.display="block";
+        d2.style.display="none";
+        btn2.className="my_btn_lg"
+        btn1.className="btn_lg_focus";
+    }
+    btn2.onclick=function(){
+        d1.style.display="none";
+        d2.style.display="block";
+        btn1.className="my_btn_lg"
+        btn2.className="btn_lg_focus";
+    }
+</script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>

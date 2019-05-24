@@ -1,0 +1,91 @@
+body{
+    height: 100vh;
+    overflow: hidden;
+    color:#fff;
+}
+#All li{
+    width:1rem;
+    height:1rem;
+    border:3px solid #d29a5d;
+    border-radius:50%;
+    margin-top:2rem;
+}
+#All li.active{
+    background: #60b699;
+}
+ul{list-style: none;}
+.h1{
+    animation:jackInTheBox 3s linear;
+}
+.h4{
+    animation:hiddens 4s linear;
+}
+@keyframes hiddens {
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+@keyframes jackInTheBox {
+    from {
+        opacity: 0;
+        transform: scale(0.1) rotate(30deg);
+        transform-origin: center bottom;
+    }
+    50% {transform: rotate(-10deg);}
+    70% {transform: rotate(3deg);}
+
+    to {opacity: 1;
+        transform: scale(1);}
+}
+
+@media (max-width: 576px) {
+    .h1{
+        top:12%;
+        left:33%;
+        font-size:20px;
+    }
+    .h4{
+        font-size:12px;
+        top:18%;
+        left:10%;
+    }
+    ul{
+        top:16%;
+        right:7%;
+    }
+    #All li{
+        margin-top:0.8rem;
+    }
+}
+@media (max-width: 768px) and (min-width: 577px){
+    .h1{
+        top:17%;
+        left:35%;
+        font-size:24px;
+    }
+    .h4{
+        font-size:18px;
+        top:27%;
+        left:18%;
+    }
+    ul{
+        top:20%;
+        right:8%;
+    }
+    #All li{
+        margin-top:1rem;
+    }
+}
+@media (min-width: 992px) {
+    .h1{
+        top:40%;
+        left:40%;
+    }
+    .h4{
+        top:70%;
+        left:20%;
+    }
+    ul{
+        top:40%;
+        right:10%;
+    }
+}

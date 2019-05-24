@@ -1,0 +1,14 @@
+.page-item:first-child .page-link {
+    border-top-left-radius:0 !important;
+    border-bottom-left-radius:0 !important;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius:0 !important;
+    border-bottom-right-radius:0 !important;
+}
+.my_top{
+    margin-top:8rem !important;
+}
+.page-item.active .page-link{background:#e9ecef;}
+.active{border-bottom:0;}

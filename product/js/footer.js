@@ -1,0 +1,9 @@
+$(function(){
+    $.ajax({
+        url:"footer.html",
+        type:"get",
+        success:function(footer){
+            $(footer).replaceAll("footer")
+        }
+    })
+})

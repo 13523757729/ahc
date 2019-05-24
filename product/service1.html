@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- 引入boot文件，引入顺序有要求-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title></title>
+    <link rel="stylesheet" href="css/same.css"/>
+    <link rel="stylesheet" href="css/service.css"/>
+    <style>
+
+    </style>
+</head>
+<body>
+<header></header>
+<table></table>
+<div class="container my_top p-0">
+    <div class="row">
+        <div class="col-lg-3 col-sm-12 mb-sm-3">
+            <p class="h5 font-weight-bold text-center mt-2">客服中心</p>
+            <hr/>
+            <a class="h6 d-block text-center div" href="service.html">品牌新闻&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</a>
+            <a class="h6 d-block text-center div mb-0" href="service1.html">店铺&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</a>
+            <div class="box text-center p-2">
+                <p class="m-0 mt-2">AHC消费者咨询室</p>
+                <a href="#" class="my_small">ahc.china@carve<br>rkorea.com</a>
+            </div>
+        </div>
+        <div class="col-lg-9 col-sm-12">
+            <p class="h3 font-weight-bold text-center">店铺</p>
+            <hr/>
+            <div class="text-center mb-5">
+                <button class="my-btn" data-toggle="tab" data-target="#d1" id="btn1">直营店</button><button class="my-btn" data-toggle="tab" data-target="#d2" id="btn2">正品旗舰店</button>
+            </div>
+            <div class="text-center font-size">
+                <input type="text" class="w-50 p-1"/>
+                <button href="#" class="my_border">搜索</button>
+            </div>
+            <div class="parent">
+                <div id="d1">
+                    <div class="row mt-4">
+                        <div class="col-sm-12 border-bottom">
+                            <a href="#">
+                                <p class="m-0 m-1">AHC PLAYZONE 新沙店</p>
+                                <p class="m-0 m-1">位置 : 岛山大路 237 江南区 首尔特别市</p>
+                                <p class="m-0 m-1">电话 : 02-541-8235营业时间 : 1F 09:30~20:30 2F 09:30~19:30 3F 10:00~21:00</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 border-bottom mt-3">
+                            <a href="#">
+                                <p class="m-0 m-1">AHC PLAYZONE 中央路店</p>
+                                <p class="m-0 m-1">位置 : 明洞8路, 10 中区, 首尔特别市</p>
+                                <p class="m-0 m-1">电话 : 02-777-8842营业时间 : 09:00~23:00</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="d2">
+                    <div class="row mt-3">
+                        <div class="col-lg-6 col-sm-12">
+                            <a href="#">
+                                <img src="http://127.0.0.1:3000/images/service/genuine_store.jpg" alt="" class="w-100"/>
+                            </a>
+                            <a href="#">
+                                <img src="http://127.0.0.1:3000/images/service/genuine_store3.jpg" alt="" class="w-100 mt-3"/>
+                            </a>
+                            <a href="#">
+                                <img src="http://127.0.0.1:3000/images/service/genuine_store5.jpg" alt="" class="w-100 mt-3"/>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 mt-lg-0 mt-sm-3">
+                            <a href="#">
+                                <img src="http://127.0.0.1:3000/images/service/genuine_store2.jpg" alt="" class="w-100"/>
+                            </a>
+                            <a href="#">
+                                <img src="http://127.0.0.1:3000/images/service/genuine_store4.jpg" alt="" class="w-100 mt-3"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var body=document.body;
+    var btn1=document.getElementById("btn1");
+    var btn2=document.getElementById("btn2");
+    var d1=document.getElementById("d1");
+    var d2=document.getElementById("d2");
+    d2.style.display="none";
+    d1.style.zIndex="0";
+    body.onload=function(){
+        btn1.className="my-btn-focus";
+    }
+    btn1.onclick=function(){
+        d1.style.display="block";
+        d2.style.display="none";
+        btn2.className="my-btn"
+        btn1.className="my-btn-focus";
+    }
+    btn2.onclick=function(){
+        d1.style.display="none";
+        d2.style.display="block";
+        btn1.className="my-btn"
+        btn2.className="my-btn-focus";
+    }
+</script>
+<footer></footer>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.col-lg-4{
+    background:#fafafa;
+}
+h3{
+    color:#555 !important;
+}
+p{
+    color:#666;
+}
+.my_btn{
+    display:inline-block;
+    width:12rem;
+    height:2.5rem;
+    border:1px solid #000;
+    font-size:1.2rem;
+    text-align:center;
+    line-height:2.5rem;
+}
+.my_btn:hover{
+    background:#9a9a9a;
+    color:#fff;
+    border-color:#9a9a9a;
+}
